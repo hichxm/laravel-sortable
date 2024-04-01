@@ -11,7 +11,7 @@
   "license": "MIT",
   "require-dev": {
     "orchestra/testbench": "v9.0.3",
-    "phpunit/phpunit": "^11.0.9"
+    "phpunit/phpunit": "^10.1|^11.0.9"
   },
   "require": {
     "spatie/laravel-package-tools": "^1.16.4",
