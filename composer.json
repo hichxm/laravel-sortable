@@ -1,0 +1,33 @@
+{
+  "name": "hichxm/laravel-sortable",
+  "description": "Laravel sortable packages for Laravel ecosystem by Hichxm",
+  "homepage": "https://github.com/hichxm/laravel-sortable",
+  "authors": [
+    {
+      "name": "Hicham SLIMANI",
+      "email": "h.slimani@digityourdream.fr"
+    }
+  ],
+  "license": "MIT",
+  "require-dev": {
+    "orchestra/testbench": "v9.0.3",
+    "phpunit/phpunit": "^11.0.9"
+  },
+  "require": {
+    "spatie/laravel-package-tools": "^1.16.4",
+    "illuminate/database": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hichxm\\LaravelSortable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hichxm\\LaravelSortable\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
