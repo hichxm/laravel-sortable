@@ -2,6 +2,15 @@
 
 Laravel Sortable is a trait that adds sortable behaviour to an Eloquent model.
 
+## Supported Laravel Versions
+
+| Laravel Version | **11** | **10** | **9** |
+|-----------------|--------|--------|-------|
+| PHP 8.1         | ❌      | ✅      | ✅     |
+| PHP 8.2         | ✅      | ✅      | ✅     |
+| PHP 8.3         | ✅      | ✅      | ✅     |
+
+
 ## Installation
 
 You can install the package via composer:
