@@ -169,7 +169,7 @@ trait HasSortableColumn
      *
      * @return Builder
      */
-    private function laravelSortableQuery(): Builder
+    protected function laravelSortableQuery(): Builder
     {
         return $this->newQuery();
     }
