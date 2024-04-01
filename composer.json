@@ -16,7 +16,7 @@
   "require": {
     "spatie/laravel-package-tools": "^1.16.4",
     "illuminate/database": "^9.0|^10.0|^11.0",
-    "doctrine/dbal": "^3.0"
+    "doctrine/dbal": "^3.5"
   },
   "autoload": {
     "psr-4": {
