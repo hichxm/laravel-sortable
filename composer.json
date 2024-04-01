@@ -5,7 +5,7 @@
   "authors": [
     {
       "name": "Hicham SLIMANI",
-      "email": "h.slimani@digityourdream.fr"
+      "email": "hicham.slimani@digityourdream.fr"
     }
   ],
   "license": "MIT",
@@ -27,7 +27,11 @@
       "Hichxm\\LaravelSortable\\Test\\": "tests"
     }
   },
-  "scripts": {
-    "test": "phpunit"
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hichxm\\LaravelSortable\\LaravelSortableServiceProvider"
+      ]
+    }
   }
 }
