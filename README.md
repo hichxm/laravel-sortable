@@ -84,7 +84,7 @@ $addressQuery->orderedAsc()->get(); // Get the addresses ordered in ascending or
 ## Testing
 
 ```bash
-composer test
+vendor/bin/phpunit
 ```
 
 ## License
