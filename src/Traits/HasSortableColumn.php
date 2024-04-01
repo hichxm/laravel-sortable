@@ -93,6 +93,24 @@ trait HasSortableColumn
     }
 
     /**
+     * Swap the order of two models
+     *
+     * @param Model|HasSortableColumn $model1
+     * @param Model|HasSortableColumn $model2
+     */
+    public static function swapOrder(Model $model1, Model $model2)
+    {
+        $orderColumnNameModel1 = $model1->determineOrderColumnName();
+        $orderColumnNameModel2 = $model2->determineOrderColumnName();
+
+        $order1 = $model1->$orderColumnNameModel1;
+        $order2 = $model2->$orderColumnNameModel2;
+
+        $model1->setOrder($order2);
+        $model2->setOrder($order1);
+    }
+
+    /**
      * Get Highest order number
      *
      * @return int

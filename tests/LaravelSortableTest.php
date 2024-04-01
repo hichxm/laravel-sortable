@@ -99,4 +99,19 @@ class LaravelSortableTest extends TestCase
         $this->assertDatabaseCount('persons', 10);
     }
 
+    public function test_swap_order_method()
+    {
+        $persons = [
+            $first = $this->createDummyPerson(['name' => 'Person 1']),
+            $second = $this->createDummyPerson(['name' => 'Person 2']),
+            $third = $this->createDummyPerson(['name' => 'Person 3']),
+        ];
+
+        Person::swapOrder($first, $third);
+
+        $this->assertEquals(3, $first->refresh()->order);
+        $this->assertEquals(2, $second->refresh()->order);
+        $this->assertEquals(1, $third->refresh()->order);
+    }
+
 }
